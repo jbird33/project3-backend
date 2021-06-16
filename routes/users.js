@@ -4,7 +4,7 @@ const ctrl = require('../controllers');
 
 router.get('/profile/:index', ctrl.users.getProfile);
 
-router.post('/', ctrl.users.signup);
+router.post('/signup', ctrl.users.signup);
 router.post('/login', ctrl.users.login);
 
 router.put('/profile/:index', ctrl.users.editProfile);
