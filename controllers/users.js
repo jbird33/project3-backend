@@ -34,8 +34,34 @@ const getProfile = (req, res) => {
     })
 }
 
+const editProfile = (req,res) => {
+    User.update(req.body, {
+        where: {
+            id: req.user.id
+        },
+        returning: true
+    })
+    .then(updatedUser => {
+        res.json(updatedUser)
+    })
+}
+
+const deleteUser = (req, res) => {
+    User.destroy({
+        where: {
+            id: req.params.index
+        }
+    })
+    .then(deletedUser => {
+        console.log("user deleted")
+        res.json(deletedUser)
+    })
+}
+
 module.exports = {
     signup,
     login,
-    getProfile
+    getProfile,
+    editProfile,
+    deleteUser
 }
