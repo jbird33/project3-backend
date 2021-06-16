@@ -9,6 +9,7 @@ app.use(bodyParser.json());
 app.use(methodOverride('_method'));
 
 app.use('/users', routes.users);
+app.use('/movies', routes.movies)
 
 app.listen(3001, (req,res) => {
     console.log("Listening");
