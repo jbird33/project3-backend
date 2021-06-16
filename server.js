@@ -8,6 +8,8 @@ const routes = require('./routes');
 app.use(bodyParser.json());
 app.use(methodOverride('_method'));
 
+app.use('/users', routes.users);
+
 app.listen(3001, (req,res) => {
     console.log("Listening");
 })
