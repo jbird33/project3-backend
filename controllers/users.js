@@ -9,6 +9,7 @@ const signup = (req,res) => {
 }
 
 const login = (req,res) => {
+    console.log("Hitting here")
     User.findOne({
         where: {
             username: req.body.username,
@@ -17,6 +18,7 @@ const login = (req,res) => {
     })
     .then(foundUser => {
         res.json(foundUser)
+        console.log("Hit here_2")
     })
 }
 
