@@ -3,7 +3,10 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
 const app = express();
+const routes = require('./routes');
 
-app.listen(3000, (req,res) => {
+app.use(bodyParser.json());
+
+app.listen(3001, (req,res) => {
     console.log("Listening");
 })
