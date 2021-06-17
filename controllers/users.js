@@ -39,7 +39,8 @@ const getProfile = (req, res) => {
 const editProfile = (req,res) => {
     User.update(req.body, {
         where: {
-            id: req.user.id
+            id: req.params.index
+            // id: req.user.id -> trying something here
         },
         returning: true
     })
