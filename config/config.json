@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "postgres",
-    "password": "noah32",
+    "password": "Piper10",
     "database": "marvel_dev",
     "host": "127.0.0.1",
     "dialect": "postgres"

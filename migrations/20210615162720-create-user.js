@@ -21,7 +21,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       movieId: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,

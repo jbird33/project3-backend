@@ -8,28 +8,28 @@ module.exports = {
         username: "ironman",
         password: "pepper",
         email: "tony@mcu.com",
-        movieId: 1
+        movieId: "Iron Man"
       },
       {
         name: "Steve Rogers",
         username: "captamerica",
         password: "peggy",
         email: "steve@mcu.com",
-        movieId: 2
+        movieId: "Captain America: The First Avenger"
       },
       {
         name: "Natasha Romanoff",
         username: "blackwidow",
         password: "bruce",
         email: "natasha@mcu.com",
-        movieId: 3
+        movieId: "The Incredible Hulk"
       },
       {
         name: "Bruce Banner",
         username: "thehulk",
         password: "natasha",
         email: "bruce@mcu.com",
-        movieId: 4
+        movieId: "Thor"
       }
       
     ])
