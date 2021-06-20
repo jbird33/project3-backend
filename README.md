@@ -1,3 +1,3 @@
-## Project 3 Favorite Marvel Movie Application
+# Marvel Mania Movie App || Jeremiah Miller and Margie Ball
 
-Wireframe
+##See Front End Readme for Full Details
